@@ -68,3 +68,62 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Description about the application
+es5-ecma script 5
+function add(a,b){
+return a+b
+}
+es6-ecma script 6
+const add=(a,b)=>{return a+b}
+
+Diff between var,let,const
+
+ "react": This is the main package of the app
+    "react-dom":This will help to bind the content in html
+    "react-scripts": This will help to run the app
+
+
+
+    function add(a,b){
+      return a,b
+    }
+    add(1,2)  o/p=2  Any function can return one value at a time.
+
+    if we need more then one value then we need to wrap the value
+    function add(a,b){
+        var out=[a,b]
+      return out
+    }
+    add(1,2)  o/p=[1,2]
+
+    ///////
+    Functional componeng and class component
+    state/props
+    binding data
+    event binding
+    passing data from one component to another
+    CSS with react
+    ===========================
+    Functional component:-
+    -Dump Component
+    -Mainly used for display purpose
+    -We can not maintain the state
+
+    class component:-
+    -logical component
+    -we can use for api calling, display as well as logic
+    -we can maintain state
+
+
+  props
+> props is use to transfer data from one component to another
+> we cannot update the value of props(immutable)
+> Props can only be used in nested components
+
+state
+> It act like a local variable
+> Every component can have its own state
+> Scope of one state is in that component only
+> we can update the value of state(mutable)
+> whenever state update component will re-render
