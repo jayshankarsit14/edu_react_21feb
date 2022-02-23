@@ -127,3 +127,14 @@ state
 > Scope of one state is in that component only
 > we can update the value of state(mutable)
 > whenever state update component will re-render
+
+===========
+map,filter,indexof,bootstrap
+
+var city=["Bangalore","Delhi","Pune"]
+
+for(i=0;i<city.length;i++){
+  console.log(city[i])
+}
+
+city.map((data)=>{console.log(data)})

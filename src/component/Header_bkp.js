@@ -1,5 +1,4 @@
 import React,{Component} from 'react';
-import './Header.css';
 
 class Header extends Component{
     constructor(){
@@ -18,11 +17,21 @@ class Header extends Component{
     }
 
     render(){
+        const myStyle={
+            header:{
+                backgroundColor:'tomato'
+            },
+            logo:{
+                color:'white',
+                textAlign:'center',
+                fontSize:'30px'
+            }
+        }
         return(
             <>
-            <header>
+            <header style={myStyle.header}>
               <center>
-              <h1 className="logo">{this.state.title}</h1>
+              <h1 style={myStyle.logo}>{this.state.title}</h1>
               <input onChange={this.handleChange}/>
               <div style={{color:'white', fontSize:'15px'}}>{this.state.keyword}</div>
               </center>

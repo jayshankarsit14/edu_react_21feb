@@ -4,7 +4,7 @@ const Footer= (props) =>{
     return(
         <Fragment>
             <hr/>
-        <center> @Jay Shankar soft {props.month} {props.year} </center>
+        <center> Developer @jayshankar soft {props.month} {props.year} </center>
         </Fragment>
     )
 }
