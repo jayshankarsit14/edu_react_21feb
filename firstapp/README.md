@@ -138,3 +138,38 @@ for(i=0;i<city.length;i++){
 }
 
 city.map((data)=>{console.log(data)})
+
+
+filter:-
+var a=[0,1,2,3]
+a.filter((data) =>{return data*2})
+
+var a = [3,5,7,8,4,9,10,1]
+a.filter((data) => {return data>5})
+(4) [7, 8, 9, 10]
+var a = [0,1,2,3]
+a.filter((data) => {return data*2})
+(3) [1, 2, 3]
+var city = ["Delhi","Mumbai","Pune","London"];
+undefined
+city.indexOf('Delhi')
+0
+city.indexOf('Pune')
+2
+city.indexOf('Amsterdam')
+-1
+
+
+//////////
+parent to child => props
+child to parent => props with function
+
+
+function add(a,b){
+    return a + b
+}
+
+add(1,2)> from where i to pass value
+
+in the a parent >>>> Define function
+in the child >>>> call function
